@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #74f665 0%, #fda085 100%);
+  margin: 0;
+  padding: 0;
+}
+
+
+.search-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 40px 25px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid #f64f59;
+}
+
+.search-card::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -40%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, #ff9a9e 10%, transparent 70%);
+  transform: rotate(25deg);
+  opacity: 0.15;
+}
+
+.wiki-logo {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.main-heading {
+  font-weight: 700;
+  color: #f64f59;
+  font-size: 32px;
+}
+
+.subtitle {
+  color: #444;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  max-width: 600px;
+}
+
+.loading-gif {
+  width: 60px;
+}
+
+.result-card {
+  background-color: #ffffff;
+  border-left: 8px solid #a18cd1;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-4px);
+  border-color: #f64f59;
+}
+
+.result-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #6a11cb;
+  text-decoration: none;
+}
+
+.result-url {
+  color: #006621;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.link-description {
+  color: #333333;
+  font-size: 15px;
+}
+
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 30px;
+  color: #6a11cb;
+  background-color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
